@@ -1,0 +1,12 @@
+ 	var x = document.getElementById("price");
+       x.style.display = "none";
+    var x = document.getElementById("cuisine");
+        x.style.display = "none";
+    var x = document.getElementById("type1");
+        x.style.display = "none";
+    var x = document.getElementById("cation");
+        x.style.display = "none";
+    var x = document.getElementById("menu");
+        x.style.display = "none";
+    var x = document.getElementById("rating");
+        x.style.display = "none";

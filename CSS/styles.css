@@ -3,6 +3,7 @@ border: 0;
 padding: 0;
 margin: 0;
 }
+
 		/* Center website */
 			.main {
 			  max-width: 1000px;
@@ -151,12 +152,9 @@ margin: 0;
 			
 
 			.logo {
-			font-weight: lighter;
-			font-size: 30px;
 			letter-spacing: 3px;
 			float: left;
-			padding: 20px 20px;
-			font-family: helvetica, sans-serif;
+			padding: 20px 40px;
 			}
 			
 			.dropdown {
@@ -219,7 +217,7 @@ margin: 0;
 			  font-weight: 170;
 			  /*text-transform: uppercase;*/
 			  letter-spacing: 3px;
-			  background-color: #174965;
+			  background-color: white;
 			  padding: 10px 5px;
 			  padding: .00005%;
 			  /*box-shadow: 5px 10px 18px #888888;
@@ -232,7 +230,7 @@ margin: 0;
 
 			.topnavhome a {
 			  float: left;
-			  color: white;
+			  color: black;
 			  text-align: center;
 			  padding: 10px 20px;
 			  text-decoration: none;
@@ -269,8 +267,8 @@ margin: 0;
 			font-size: 30px;
 			letter-spacing: 6px;
 			float: left;
-			padding: 20px 20px;
-			color: white;
+			padding: 20px 40px;
+			color: black;
 			}
 			
 			/* Dropdown button homepage */
@@ -330,7 +328,8 @@ margin: 0;
 			
 			h1 {
 			font-family: helvetica, sans-serif;
-			font-weight: 200;
+			font-size: 22px;
+			font-weight:300;
 			font-size: 30px;
 			letter-spacing: 6px;
 			
@@ -752,21 +751,21 @@ margin: 0;
 			}
 		
 			p2 {
-			  text-align: center;
+			  text-align: left;
 			  font-family: helvetica, sans-serif;
-			  font-style: normal;
-			  font-weight: 200;
-			  font-size: 25px;
-			  color: #424242;
+			  font-style: italic;
+			  font-weight: 100;
+			  font-size: 23px;
+			  color: white;
 			  
 			}
 			p22 {
-			  text-align: center;
+			  text-align: left;
 			  font-family: helvetica, sans-serif;
 			  font-style: bold;
 			  font-weight: 400;
-			  color: black;
-			  font-size: 25px;
+			  color: white;
+			  font-size: 30px;
 			}
 			
 			
@@ -830,7 +829,7 @@ margin: 0;
 		.dark {
 		background-color: #174965;
 		color: #F3F5F6;
-		margin-bottom: 10%;
+		margin-bottom: 0%;
 		}
 		
 		.light {
@@ -1219,7 +1218,7 @@ margin: 0;
 			   letter-spacing: 3px;
 			   color: grey;
 			   font-size: 12px;
-			   
+			
 			}
 			
 			.footer a {

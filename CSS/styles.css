@@ -12,6 +12,7 @@ scroll-behavior: smooth;
 			.main {
 			  max-width: 1000px;
 			  margin: auto;
+			  
 			} 
 			
 			.main2 {
@@ -29,14 +30,35 @@ scroll-behavior: smooth;
 		  	background-size: cover;
 			}
 			
+			div.transbox {
+			  margin: 30px;
+			  background-color: #ffffff;
+			  border: 2px solid black;
 			  
+			}
 			
+			div.transbox h3 {
+			  margin: 5%;
+			  font-weight: bold;
+			  color: #000000;
+			}
+			
+			hr { 
+			  display: block;
+			  margin-top: 0.5em;
+			  margin-bottom: 0.5em;
+			  margin-left: auto;
+			  margin-right: auto;
+			  border-style: inset;
+			  border-width: .5px;
+			} 
+			  	
 		
 		h3 {
 		  text-align: center;
 		  text-transform: uppercase;
-		  color: #f5f6f7;
-		  font-size: 60px;
+		  color: #ffffff;
+		  font-size: 80px;
 		  font-family: helvetica, sans-serif;
 		  font-weight: 700;
 		 }
@@ -44,10 +66,11 @@ scroll-behavior: smooth;
 		 h4 {
 		  text-align: left;
 		  text-transform: uppercase;
-		  color: #000000;
-		  font-size: 40px;
+		  color: rgba(74,74,74,.84);
+		  font-size: 17px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 600;
+		  font-weight: 500;
+		  letter-spacing: .10em;
 		 }
 		 
 		 h5 {
@@ -140,18 +163,19 @@ scroll-behavior: smooth;
 		 
 		 p4 {
 		  text-transform: none;
-		  text-align: center;
-		  color: #ffffff;
-		  line-height: 1.6;
-		  font-size: 20px;
+		  text-align: left;
+		  color: #2b2b2b;
+		  font-size: 16px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 200;
+		  font-weight: 300;
+		  line-height: 1.8em;
+    	  letter-spacing: .01em;
 		 }
 		 
 		p5 {
 		  text-transform: none;
 		  text-align: center;
-		  color: #ffffff;
+		  color: #000000;
 		  font-size: 15px;
 		  font-family: helvetica, sans-serif;
 		  font-style: italic;
@@ -161,21 +185,24 @@ scroll-behavior: smooth;
 		 /*Paragraphs*/
 		 p6 {
 		  text-align: left;
-		  text-transform: uppercase;
-		  color: #000000;
-		  font-size: 30px;
+		  text-transform: none;
+		  color: #333;
+		  font-size: 22px;
 		  font-family: helvetica, sans-serif;
 		  font-weight: 520;
+		  line-height: 1.8em;
+		  letter-spacing: .05em;
 		 }
 		 
 		  p7 {
 		  text-transform: none;
 		  text-align: center;
-		  color: #000000;
-		  text-transform: uppercase;
-		  font-size: 25px;
+		  color: #333;
+		  font-size: 20px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 520;
+		  font-weight: 400;
+		  line-height: 1.8em;
+		  letter-spacing: .03em;
 		 }
 		  
 		p8 {
@@ -203,20 +230,20 @@ scroll-behavior: smooth;
 		p10 {
 		  text-transform: none;
 		  text-align: left;
-		  color: #000000;
-		  line-height: 1.6;
-		  text-decoration: underline;
-		  font-size: 30px;
+		  color: #2b2b2b;
+		  font-size: 22px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 200;
+		  font-weight: 300;
+		  line-height: 1.8em;
+    	  letter-spacing: .01em;
 		 }
 		 
 		 p11 {
 		  text-transform: none;
 		  text-align: left;
-		  color: #000000;
+		  color: #2b2b2b;
 		  line-height: 1.6;
-		  font-size: 25px;
+		  font-size: 22px;
 		  font-family: helvetica, sans-serif;
 		  font-weight: 200;
 		 }
@@ -259,39 +286,42 @@ scroll-behavior: smooth;
 			  font-size: 70px;
 			}
 		 
-		p24{
-		  text-transform: none;
-		  text-align: center;
-		  color: #ffffff;
-		  line-height: 1.6;
-		  font-size: 20px;
-		  font-family: helvetica, sans-serif;
-		  font-weight: bold;
-		
-		}
 		 
 		 ul {
 		  text-transform: none;
 		  text-align: none;
-		  color: #000000;
-		  line-height: 1.6;
-		  margin-top: 2%;
-		  margin-left: 3%;
-		  font-size: 20px;
+		  color: #2b2b2b;
+		  font-size: 16px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 200;
+		  font-weight: 300;
+		  line-height: 1;
+    	  letter-spacing: .01em;
+		 }
+		 
+		 ol {
+		  text-transform: none;
+		  text-align: none;
+		  margin-top: 2%;
+		  margin-left: 5%;
+		  color: #2b2b2b;
+		  font-size: 16px;
+		  font-family: helvetica, sans-serif;
+		  font-weight: 300;
+		  line-height: 1.8;
+    	  letter-spacing: .01em;
 		 }
 		 
 		 li {
 		  text-transform: none;
 		  text-align: none;
-		  color: #000000;
-		  line-height: 1;
 		  margin-top: 2%;
 		  margin-left: 5%;
-		  font-size: 20px;
+		  color: #2b2b2b;
+		  font-size: 16px;
 		  font-family: helvetica, sans-serif;
-		  font-weight: 200;
+		  font-weight: 300;
+		  line-height: 1.8;
+    	  letter-spacing: .01em;
 		 }
 		 
 		
@@ -348,7 +378,7 @@ scroll-behavior: smooth;
 		/*Navigation Menu*/
 			
 			.sidenav {
-			  font-family: "Lato", sans-serif;
+			  font-family: helvetica, sans-serif;
 			  height: 100%;
 			  width: 0;
 			  position: fixed;
@@ -951,10 +981,24 @@ scroll-behavior: smooth;
 
 		/*STAMP Page*/
 		
-		.dark {
-		background-color: #1A1E23;
-		color: #F3F5F6;
-		margin-bottom: 0%;
+		.stamppage{
+			background-color: #ffffff;
+			padding-top: 5%;			
+			padding-bottom: 5%;
+		  	
+		  	background-position: center;
+		  	background-repeat: no-repeat;
+		  	background-size: cover;
+		}
+		
+		.munchies {
+			background-color: #ffffff;
+			padding-top: 5%;			
+			padding-bottom: 5%;
+		  	
+		  	background-position: center;
+		  	background-repeat: no-repeat;
+		  	background-size: cover;
 		}
 		
 		.light {

@@ -17,7 +17,8 @@ scroll-behavior: smooth;
 
 			.main2 {
 			  max-width: 1000px;
-			  margin-left:300px;
+			  margin-left:200px;
+				margin-right:200px;
 			}
 
 			.introcolor {

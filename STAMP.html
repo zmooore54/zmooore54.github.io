@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
 		<link rel='stylesheet'href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity=
 		'sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-		
+
 		<title>Zora Moore | Portfolio</title>
 	</head>
 
@@ -17,15 +17,25 @@
 
 	<script src="js/jsfunctions.js"></script>
 
-
 	<div id ="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width:100%;right:0;
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width:100%;right:0;
 	  padding-top: 13%;padding-bottom: 5%; " > <h12> Zora Moore &nbsp &times;</h12> </a>
-	  <a href="index.html#work">UX Work</a>
-	  <a href="index.html#about">About</a>
+		<a href="index.html">Home</a>
+		<button class="dropdown-btn">UX Projects
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-container">
+			<a href="stamp.html">STAMP Event Discovery</a>
+			<a href="connect.html">Connect</a>
+	    <a href="munchies.html">Munchies</a>
+	    <!--<a href="genius.html">Genius App Design</a>
+	    <a href="qualcomm.html">Qualcomm Internship</a>
+			<a href="dailyui.html">Daily UI Design Challenge</a>-->
+	  </div>
 	  <a href="docs/ZoraMoore_Resume.pdf" target="_blank">Resume</a>
-
 	</div>
+
+
 
 	<div id="main">
 	<div class="main">
@@ -36,20 +46,57 @@
 	</div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"> </button>
 
-	<div class="stamppage" style = "background-image: url(img/STAMPpage/STAMP.png);">
-		<div class="main">
-			<div class="info-container">
-				<br><br><br>
+	<div class = "hero-image" style = "background-image: url(img/hero/stamphero.png);">
 
-					<h3> Stamp Event Discovery</h3>
-
-					<br><br><br>
-
-			</div>
-		</div>
 	</div>
 
-	<div class="main">
+	<div class = "stampcolor">
+		<div class="main">
+			<div class="grid-container">
+				<div>
+					<h6> Client </h6>
+					<br>
+					<p17>Eva Quintos Tennant, Assistant Director of Marketing and Communications at STAMP</p17>
+
+					<br><br>
+
+					<h6>Timeline</h6>
+
+					<br>
+					<p17>8 Weeks</p17>
+
+					<br><br>
+
+					<h6>Role</h6>
+
+					<br>
+					<p17>Researcher and Concept Designer</p17>
+
+					<br><br>
+
+					<h6>Tools </h6>
+
+					<br>
+					<p17>Pen & paper, InDesign, Contextual Inquiry</p17>
+
+				</div>
+				<div>
+					<h6>Background</h6>
+				<br>
+					<p17> The Adele H. Stamp Student Union (STAMP) is the student activity
+					center at the University of Maryland. It aims to nurture a welcoming
+					and inclusive community through events, resources, and
+					intentional programming. With over <b> 3,000 </b>  events happening in and
+					around the building each year, it is nearly impossible to keep students
+					in the loop. Conversely, students have a hard time finding events that
+					interest them.</p17>
+
+ 			</div>
+		</div>
+	</div>
+	</div>
+
+	<!--
 			<div class="info-container">
 				<br><br><br><br>
 
@@ -88,8 +135,10 @@
 					<h4>Tools </h4>
 
 					<br>
-					<p4>Pen & paper, InDesign, Contextual Inquiry </p4>
+					<p4>Pen & paper, InDesign, Contextual Inquiry </p4>-->
 
+<div class="main">
+	<div class="info-container">
 				<br><br>
 				<hr align="center" width="90%" color=" #4A4A4A">
 				<br><br>
@@ -592,22 +641,22 @@ function closeNav() {
   document.getElementById("main").style.marginRight = "0";
 }
 
-//drop down
-
-var dropdown = document.getElementsbyClassName("dropdown-btn");
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-	dropdown[i].addEventListener("click", function() {
-	this.classList.toggle("active");
-	var dropdownContent = this.nextElementSibling;
-	if (dropdownContent.style.display === "block") {
-	dropdownContent.style.display = "none";
-	} else {
-	dropdownContent.style.display = "block";
-	}
-	});
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
 }
+
 </script>
 <div class= "footer">
 <div class= "main">

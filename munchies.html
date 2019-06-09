@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
 		<link rel='stylesheet'href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity=
 		'sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-		
+
 
 		<title>Zora Moore | Portfolio</title>
 	</head>
@@ -20,12 +20,21 @@
 
 
 	<div id ="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width:100%;right:0;
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width:100%;right:0;
 	  padding-top: 13%;padding-bottom: 5%; " > <h12> Zora Moore &nbsp &times;</h12> </a>
-	  <a href="index.html#work">UX Work</a>
-	  <a href="index.html#about">About</a>
+		<a href="index.html">Home</a>
+		<button class="dropdown-btn">UX Work
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-container">
+			<a href="stamp.html">STAMP Event Discovery</a>
+			<a href="connect.html">Connect</a>
+	    <a href="munchies.html">Munchies</a>
+	    <!--<a href="genius.html">Genius App Design</a>
+	    <a href="qualcomm.html">Qualcomm Internship</a>
+			<a href="dailyui.html">Daily UI Design Challenge</a>-->
+	  </div>
 	  <a href="docs/ZoraMoore_Resume.pdf" target="_blank">Resume</a>
-
 	</div>
 
 	<div id="main">
@@ -37,59 +46,58 @@
 	</div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"> </button>
 
-	<div class="stamppage" style = "background-image: url(img/munchiespage/aerieltable.jpg);">
+	<div class = "hero-image" style = "background-image: url(img/hero/munchiesHero.png);">
+
+	</div>
+
+	<div class = "munchiescolor">
 		<div class="main">
-			<div class="info-container">
-			<br><br><br>
+			<div class="grid-container">
+				<div>
+					<h6> Context </h6>
+					<br>
+					<p17>This group project was completed for our Programming for the Information
+					Professional course. We built the app from the ground up, starting with HTML/CSS
+					and adding in JavaScript features.
+				</p17>
 
-				<h3> Munchies</h3>
+					<br><br>
 
-				<br><br><br>
+					<h6>Timeline </h6>
+
+					<br>
+					<p17>8 Weeks </p17>
+
+					<br><br>
+
+					<h6>Role </h6>
+
+					<br>
+					<p17>Designer and Developer </p17>
+
+					<br><br>
+
+					<h6>Tools </h6>
+
+					<br>
+					<p17>Adobe XD, Javascript, HTML + CSS </p17>
+
+				</div>
+				<div>
+					<h6>Background</h6>
+					<br>
+					<p17>College students typically go out to eat in groups which can be difficult
+					when everyone has different preferences. They also discover restaurants in
+					unconventional ways. Current restaurant focused applications have gotten too big
+					and cloud the discovery experience. </p17>
 
 			</div>
 		</div>
 	</div>
+</div>
 
 	<div class="main">
-			<div class="info-container">
-			<br><br><br><br>
-
-				<h4>Background</h4>
-				<br>
-				<p4>College students typically go out to eat in groups which can be difficult
-				when everyone has different preferences. They also discover restaurants in
-				unconventional ways. Current restaurant focused applications have gotten too big
-				and cloud the discovery experience. </p4>
-
-				<br><br>
-
-				<h4> Context </h4>
-				<br>
-				<p4>This group project was completed for our Programming for the Information
-				Professional course. We built the app from the ground up, starting with HTML/CSS
-				and adding in JavaScript features.
-				</p4>
-
-				<br><br>
-
-				<h4>Timeline </h4>
-
-				<br>
-				<p4>8 Weeks </p4>
-
-				<br><br>
-
-				<h4>Role </h4>
-
-				<br>
-				<p4>Designer and Developer </p4>
-
-				<br><br>
-
-				<h4>Tools </h4>
-
-				<br>
-				<p4>Adobe XD, Javascript, HTML + CSS </p4>
+		<div class="info-container">
 
 				<br><br>
 				<hr align="center" width="90%" color=" #4A4A4A">
@@ -425,21 +433,20 @@ function closeNav() {
   document.getElementById("main").style.marginRight = "0";
 }
 
-//drop down
-
-var dropdown = document.getElementsbyClassName("dropdown-btn");
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-	dropdown[i].addEventListener("click", function() {
-	this.classList.toggle("active");
-	var dropdownContent = this.nextElementSibling;
-	if (dropdownContent.style.display === "block") {
-	dropdownContent.style.display = "none";
-	} else {
-	dropdownContent.style.display = "block";
-	}
-	});
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
 }
 </script>
 

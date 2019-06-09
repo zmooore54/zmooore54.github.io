@@ -25,11 +25,39 @@ scroll-behavior: smooth;
 			background-color: #ffffff;
 			padding-top: 5%;
 			padding-bottom: 5%;
+			background-size: cover;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+			}
 
+			.hero-image {
+				background-color: #ffffff;
+				padding-top: 5%;
+				padding-bottom: 5%;
+				height: 500px;
+				background-size: cover;
 		  	background-position: center;
 		  	background-repeat: no-repeat;
-		  	background-size: cover;
 			}
+
+			.stampcolor {
+			background-color: #DA8396;
+			padding-top: 5%;
+			padding-bottom: 2%;
+			}
+
+			.munchiescolor {
+			background-color: #A4A3AB;
+			padding-top: 5%;
+			padding-bottom: 2%;
+			}
+
+			.connectcolor {
+			background-color: #04446A;
+			padding-top: 5%;
+			padding-bottom: 2%;
+			}
+
 
 			div.transbox {
 			  margin: 30px;
@@ -84,6 +112,16 @@ scroll-behavior: smooth;
 
 			}
 
+			h6 {
+ 		  text-align: left;
+ 		  text-transform: uppercase;
+ 		  color: #ffffff;
+ 		  font-size: 17px;
+ 		  font-family: 'Poppins', sans-serif;
+ 		  font-weight: 500;
+ 		  letter-spacing: .10em;
+ 		 }
+
 
 
 		 h7 {
@@ -91,7 +129,7 @@ scroll-behavior: smooth;
 		  text-transform: uppercase;
 		  color: black;
 		  font-size: 100px;
-		  font-family: font-family: 'Poppins', sans-serif;
+		  font-family: 'Poppins', sans-serif;
 		  font-weight: 700;
 		 }
 
@@ -274,6 +312,26 @@ scroll-behavior: smooth;
 		  font-weight: 400;
 		 }
 
+		 p17 {
+		  text-transform: none;
+		  text-align: left;
+		  color: #ffffff;
+		  font-size: 16px;
+		  font-family: 'Poppins', sans-serif;
+		  font-weight: 300;
+		  line-height: 1.8em;
+    	letter-spacing: .01em;
+		 }
+
+		 p18 {
+
+		 	text-align: center;
+		 	color: #067BC2;
+		 	font-size: 16px;
+		 	font-family: "Poppins", sans-serif;
+		 	font-style: italic;
+		 	font-weight:bold;
+		 }/*quotes*/
 
 		 p22 {
 			  text-align: center;
@@ -408,6 +466,28 @@ scroll-behavior: smooth;
 		  color: black;
 		}
 
+		.vmbutton {
+			background-color: white;
+			border: 2px solid #555555;
+			color: black;
+			padding: 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 12px;
+			width: 50%;
+		}
+
+
+		.vmbutton5:hover {
+
+			background-color: #f5895e;
+			color: white;
+		}
+
 
 		.parallax {
 		  /* The image used */
@@ -426,7 +506,7 @@ scroll-behavior: smooth;
 		/*Navigation Menu*/
 
 			.sidenav {
-			  font-family: helvetica, sans-serif;
+			  font-family: Poppins, sans-serif;
 			  height: 100%;
 			  width: 0;
 			  position: fixed;
@@ -437,25 +517,27 @@ scroll-behavior: smooth;
 			  overflow-x: hidden;
 			  transition: 0.5s;
 			  padding-top: 8%;
+
 			}
 
 			.sidenav a {
 			  padding: 8px 8px 8px 32px;
 			  text-decoration: none;
-			  font-size: 15px;
+			  font-size: 20px;
 			  color: #818181;
 			  display: block;
 			  transition: 0.3s;
 			  padding-top: 5%;
 			  padding-bottom: 5%;
+				margin-left: 5%;
 			  font-weight: 300;
 
 			}
-
-			.dropdown-btn {
-			  padding: 8px 8px 8px 32px;
+			.sidenav a, .dropdown-btn {
+			  padding: 6px 8px 6px 16px;
 			  text-decoration: none;
 			  font-size: 20px;
+				margin-left: 5%;
 			  color: #818181;
 			  display: block;
 			  border: none;
@@ -466,8 +548,14 @@ scroll-behavior: smooth;
 			  outline: none;
 			}
 
+			.sidenav a:hover, .dropdown-btn:hover {
+			  color: #f1f1f1;
+			}
+
+
 			.sidenav a:hover{
 			  color: #f1f1f1;
+				text-decoration: none;
 			}
 
 			.dropdown-btn:hover {
@@ -476,13 +564,13 @@ scroll-behavior: smooth;
 
 
 			.active {
-				background-color: green;
+				background-color: #f5895e;
 				color: white;
 			}
 
 			.dropdown-container {
 			  display: none;
-			  background-color: #262626;
+
 			  padding-left: 8px;
 			}
 
@@ -642,12 +730,32 @@ scroll-behavior: smooth;
 
 			.grid-container {
 			  display: grid;
+			  grid-column-gap: 30px;
+			  grid-template-columns: 50% 50%;
+				grid-template-rows: 425px;
+			  padding: 10px;
+			}
+
+			.grid-item {
+				background-size: 100% 100%;
+			  padding: 5px 0px 0px 0px;
+				border-radius: 10px;
+
+			}
+
+			img.rounded-corners{
+				border-radius: 10px;
+			}
+
+			/*.grid-container {
+			  display: grid;
 			  grid-template-columns: auto;
-			  grid-template-rows: 425px;;
-			  grid-gap: 5px;
+			  grid-template-rows: 425px;
+			  grid-gap: 20px;
+
 			  /*box-shadow: 2px 2px 20px 2px #888888;*/
 
-			  margin-top: 3%;
+			 /* margin-top: 3%;
 
 
 
@@ -658,17 +766,20 @@ scroll-behavior: smooth;
 			  font-size: 18px;
 			  width: auto;
 
-			}
+			}*/
+
 
 
 			/* Create two unequal columns that floats next to each other */
 			.column {
 			  float: left;
-			  padding: 2px;
+			  padding: 5px;
 				width: 50%;
 			  height: 425px; /* Should be removed. Only for demonstration */
-			  background-size: 95% 95%;
+				border-radius: 10px;
+			  background-size: 100% 100%;
 			  background-repeat: no-repeat;
+
 
 			  }
 

@@ -311,57 +311,6 @@ scroll-behavior: smooth;
     	  letter-spacing: .01em;
 		 }
 
-		/*overlay menu*/
-
-		.overlay {
-		  height: 100%;
-		  width: 0;
-		  position: fixed;
-		  z-index: 1;
-		  top: 0;
-		  left: 0;
-		  background-color: rgb(0,0,0);
-		  background-color: rgba(0,0,0, 0.9);
-		  overflow-x: hidden;
-		  transition: 0.5s;
-		}
-
-		.overlay-content {
-		  position: relative;
-		  top: 25%;
-		  width: 100%;
-		  text-align: center;
-		  margin-top: 30px;
-		}
-
-		.overlay a {
-		  padding: 8px;
-		  text-decoration: none;
-		  font-size: 36px;
-		  color: #818181;
-		  display: block;
-		  transition: 0.3s;
-		}
-
-		.overlay a:hover, .overlay a:focus {
-		  color: #f1f1f1;
-		}
-
-		.overlay .closebtn {
-		  position: absolute;
-		  top: 20px;
-		  right: 45px;
-		  font-size: 60px;
-		}
-
-		@media screen and (max-height: 450px) {
-		  .overlay a {font-size: 20px}
-		  .overlay .closebtn {
-		  font-size: 40px;
-		  top: 15px;
-		  right: 35px;
-		  }
-		}
 
 		/*back to top button*/
 		#myBtn {
@@ -566,67 +515,6 @@ scroll-behavior: smooth;
 				}
 
 
-				@media screen and (max-width: 900px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-				@media screen and (max-width: 768px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-				@media screen and (max-width: 685px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-
-				@media screen and (max-width: 607px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-
-				@media screen and (max-width: 420px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-
-				@media screen and (max-width: 385px) {
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-
-				@media screen and (max-width: 325px){
-				.main2 {
-				float: none;
-				display: block;
-				text-align: center;
-				}
-				}
-
-
 
 		/* UX page */
 
@@ -738,15 +626,7 @@ scroll-behavior: smooth;
 			  box-shadow: 0px 10px 30px 0px #888888;
 			}
 
-
-
-
-
 			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-
-
-
 
 				.intro {
 				  max-width: 1000px;
@@ -757,9 +637,7 @@ scroll-behavior: smooth;
 				font-family: "Times New Roman", Times, serif;
 				font-size: 30px;
 				}
-
-
-
+				
 				.blurb {
 				  max-width: 300px;
 				  margin: auto;

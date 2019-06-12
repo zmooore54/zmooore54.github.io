@@ -58,6 +58,11 @@ scroll-behavior: smooth;
 			padding-bottom: 2%;
 			}
 
+			.vl {
+		  border-left: 1px solid black;
+		  height: 50px;
+		}
+
 
 		 h4 {
 		  text-align: left;
@@ -90,6 +95,14 @@ scroll-behavior: smooth;
 		  color: #000000;
 		 }
 
+		 h9 {
+		 text-transform: none;
+		 text-align: center;
+		 line-height: 1.6;
+		 font-family: 'Poppins', sans-serif;
+		 font-size: 30px;
+		 color: #000000;
+		 }
 
 
 		 h12 {
@@ -226,7 +239,7 @@ scroll-behavior: smooth;
 		  text-transform: none;
 		  text-align: center;
 		  color: #000000;
-		  font-size: 18px;
+		  font-size: 16px;
 		  font-family: 'Poppins', sans-serif;
 		  font-weight: 100;
 		 }
@@ -623,7 +636,7 @@ scroll-behavior: smooth;
 
 			.grid-container {
 			  display: grid;
-			  grid-column-gap: 30px;
+			  grid-column-gap: 50px;
 			  grid-template-columns: 50% 50%;
 				grid-template-rows: 425px;
 			  padding: 10px;
@@ -670,6 +683,22 @@ scroll-behavior: smooth;
 				  background-repeat: no-repeat;
 
 				  }
+
+					.column3 {
+					  float: left;
+					  padding: 5px;
+						width: 33.3%;
+					  height: auto; /* Should be removed. Only for demonstration */
+						border-radius: 10px;
+
+					  }
+
+						/* Clear floats after the columns */
+						.row:after {
+						  content: "";
+						  display: table;
+						  clear: both;
+						}
 
 
 
@@ -889,6 +918,23 @@ scroll-behavior: smooth;
 				max-width:100%;
 		}
 
+		.pagination {
+		  display: inline-block;
+		}
+
+		.pagination a {
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		  transition: background-color .3s;
+		}
+
+		.pagination a.active {
+		  background-color: #f5895e;
+		  color: white;
+		}
+
 
 			/* footer */
 			.fcolumn {
@@ -934,6 +980,7 @@ scroll-behavior: smooth;
 			  color: #000;
 			  text-decoration: line-under;
 			}
+
 
 			/*links*/
 		a:link {

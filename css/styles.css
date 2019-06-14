@@ -698,6 +698,7 @@ scroll-behavior: smooth;
 				@media only screen and (max-width: 600px) {
 				  .item2{
 						grid-area: 2 / 1;
+						margin-top: 0px;
 				  }
 				}
 			.item3 {
@@ -726,6 +727,7 @@ scroll-behavior: smooth;
 			  .grid-container{
 					display: grid;
 					grid-template-columns: auto;
+					grid-template-rows: auto;'
 			  }
 			}
 

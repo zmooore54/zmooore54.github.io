@@ -12,13 +12,38 @@ scroll-behavior: smooth;
 			.main {
 			  max-width: 1100px;
 			  margin: auto;
+				padding: 10px 50px 0px 10px;
+			}
 
+			@media only screen and (max-width: 600px) {
+			  .main {
+					max-width: 500px;
+  			  margin-left:20px;
+  				margin-right:20px;
+			  }
+			}
+
+			div.space{
+			  padding-bottom: 30px;
+			}
+			@media screen and (max-width: 600px) {
+			  div.space {
+			    padding-bottom: 0px;
+			  }
 			}
 
 			.main2 {
 			  max-width: 1000px;
 			  margin-left:200px;
 				margin-right:200px;
+			}
+
+			@media only screen and (max-width: 600px) {
+			  .main2 {
+					max-width: 500px;
+  			  margin-left:50px;
+  				margin-right:50px;
+			  }
 			}
 
 			.introcolor {
@@ -30,6 +55,7 @@ scroll-behavior: smooth;
 	  	background-repeat: no-repeat;
 			}
 
+
 			.hero-image {
 				background-color: #ffffff;
 				padding-top: 5%;
@@ -40,28 +66,40 @@ scroll-behavior: smooth;
 		  	background-repeat: no-repeat;
 			}
 
+
 			.stampcolor {
 			background-color: #DA8396;
 			padding-top: 5%;
-			padding-bottom: 2%;
+			padding-bottom: 5%;
 			}
 
 			.munchiescolor {
 			background-color: #A4A3AB;
 			padding-top: 5%;
-			padding-bottom: 2%;
+			padding-bottom: 5%;
 			}
 
 			.connectcolor {
 			background-color: #04446A;
 			padding-top: 5%;
-			padding-bottom: 2%;
+			padding-bottom: 5%;
 			}
 
 			.vl {
 		  border-left: 1px solid black;
 		  height: 50px;
-		}
+			}
+
+			button{
+				font-size:35px;
+				background-color: transparent;
+			}
+			@media screen and (max-width: 600px) {
+				button{
+					font-size: 20px;
+				}
+			}
+
 
 
 		 h4 {
@@ -72,6 +110,21 @@ scroll-behavior: smooth;
 		  font-family: 'Poppins', sans-serif;
 		  font-weight: 500;
 		  letter-spacing: .10em;
+		 }
+		 h5 {
+		  text-align: left;
+		  text-transform: uppercase;
+		  color: rgba(74,74,74,.84);
+		  font-size: 17px;
+		  font-family: 'Poppins', sans-serif;
+		  font-weight: 500;
+		  letter-spacing: .10em;
+		 }
+
+		 @media screen and (max-width: 600px) {
+			 h5 {
+				 font-size: 10px;
+			 }
 		 }
 
 
@@ -84,6 +137,12 @@ scroll-behavior: smooth;
  		  font-weight: 500;
  		  letter-spacing: .10em;
  		 }
+
+		 @media screen and (max-width: 600px) {
+			 h6 {
+				 font-size: 13px;
+			 }
+		 }
 
 
 		  h8 {
@@ -112,7 +171,12 @@ scroll-behavior: smooth;
 		  font-size: 25px;
 		  font-family: 'Poppins', sans-serif;
 		  font-weight: 400;
+		 }
 
+		 @media screen and (max-width: 600px) {
+			 h12{
+				 display: none;
+			 }
 		 }
 
 		 p2 {
@@ -124,6 +188,12 @@ scroll-behavior: smooth;
 
 			}
 
+			@media only screen and (max-width: 600px) {
+			  p2 {
+				 font-size: 18px;
+			  }
+			}
+
 
 			p15 {
 				text-align: left;
@@ -132,8 +202,6 @@ scroll-behavior: smooth;
 			  font-size: 18px;
 			  letter-spacing: 1px;
 			  font-weight: 400;
-
-
 			}
 
 			p16 {
@@ -141,10 +209,7 @@ scroll-behavior: smooth;
 			  color: #999999;
 			  font-family: 'Poppins', sans-serif;
 			  font-size: 15px;
-
 			  }
-
-
 
 		 p4 {
 		  text-transform: none;
@@ -156,6 +221,24 @@ scroll-behavior: smooth;
 		  line-height: 1.8em;
     	  letter-spacing: .01em;
 		 }
+
+		 p5 {
+		  text-transform: none;
+		  text-align: left;
+		  color: #2b2b2b;
+		  font-size: 16px;
+		  font-family: 'Poppins', sans-serif;
+		  font-weight: 300;
+		  line-height: 1.8em;
+    	letter-spacing: .01em;
+		 }
+
+		 @media screen and (max-width: 600px) {
+			 p5 {
+				 font-size: 9px;
+			 }
+		 }
+
 
 
 		 /*Paragraphs*/
@@ -263,6 +346,12 @@ scroll-behavior: smooth;
     	letter-spacing: .01em;
 		 }
 
+		 @media screen and (max-width: 600px) {
+			 p17 {
+				 font-size: 10px;
+			 }
+		 }
+
 		 p18 {
 
 		 	text-align: center;
@@ -347,6 +436,17 @@ scroll-behavior: smooth;
 		  color: black;
 		}
 
+		/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+		@media only screen and (max-width: 600px) {
+		  #myBtn {
+			 padding: 0px 10px 0px 10px;
+			 font-size: 8px;
+			 position: fixed;
+			 width: 12%;
+			 height: 10%;
+		  }
+		}
+
 		.vmbutton {
 			background-color: white;
 			border: 2px solid #555555;
@@ -404,7 +504,7 @@ scroll-behavior: smooth;
 			  padding: 6px 8px 6px 16px;
 			  text-decoration: none;
 			  font-size: 20px;
-				margin-left: 5%;
+				margin-left: 1%;
 			  color: #818181;
 			  display: block;
 			  border: none;
@@ -454,10 +554,11 @@ scroll-behavior: smooth;
 			  margin-left: 50px;
 			}
 
-			@media screen and (max-height: 450px) {
-  			.sidenav {padding-top: 15px;}
+			@media screen and (max-width: 600px) {
+  			.sidenav {padding-top: 40px;}
   			.sidenav a {font-size: 18px;}
 			}
+
 
 			/*Top Nav*/
 
@@ -501,10 +602,10 @@ scroll-behavior: smooth;
 		  float: right;
 		}
 
-			@media screen and (max-width: 500px) {
+			@media screen and (max-width: 600px) {
 		  .header a {
 		    float: none;
-		    display: block;
+		    display: inline-block;
 		    text-align: left;
 		  }
 
@@ -538,11 +639,94 @@ scroll-behavior: smooth;
 			  padding: 10px;
 			}
 
+			@media only screen and (max-width: 600px) {
+				.grid-container{
+					grid-template-rows: 350px;
+					grid-row-gap: 10px;
+				}
+			}
+
+
 			.grid-item {
 				background-size: 100% 100%;
 			  padding: 5px 0px 0px 0px;
 				border-radius: 10px;
+			}
+			@media only screen and (max-width: 600px) {
+				.grid-item{
+					display: inline;
+				}
+			}
 
+			.grid-container1 {
+			  display: grid;
+			  grid-column-gap: 50px;
+			  grid-template-columns: 50% 50%;
+				grid-template-rows: 425px;
+			  padding: 10px;
+			}
+
+			@media only screen and (max-width: 600px) {
+				.grid-container1{
+					grid-row-gap: 10px;
+					padding: 10px 50px 0px 10px;
+				}
+			}
+			.grid-item1 {
+				background-size: 100% 100%;
+			  padding: 5px 0px 0px 0px;
+				border-radius: 10px;
+			}
+
+
+
+			.item1 {
+			  grid-area: 1 / 1;
+			}
+
+				@media only screen and (max-width: 600px) {
+				  .item1{
+						grid-area: 1 / 1;
+						padding-top: 30px;
+				  }
+				}
+
+			.item2 {
+			  grid-area: 2 / 1;
+			}
+
+				@media only screen and (max-width: 600px) {
+				  .item2{
+						grid-area: 2 / 1;
+				  }
+				}
+			.item3 {
+			  grid-area: 1 / 2;
+
+			}
+
+				@media only screen and (max-width: 600px) {
+				  .item3{
+						grid-area: 3 / 1;
+						padding-top: 60px;
+				  }
+				}
+			.item4 {
+			  grid-area: 2 / 2;
+			}
+				@media only screen and (max-width: 600px) {
+				  .item4{
+						grid-area: 4 / 1;
+						padding-bottom: 30px;
+				  }
+				}
+
+
+			@media only screen and (max-width: 600px) {
+			  .grid-container{
+					display: grid;
+					grid-template-columns: auto;
+			  }
 			}
 
 			img.rounded-corners{
@@ -550,25 +734,35 @@ scroll-behavior: smooth;
 			}
 
 
-			/* Create two unequal columns that floats next to each other */
+
+			/* Float four columns side by side */
 			.column {
 			  float: left;
-			  padding: 5px;
-				width: 50%;
-			  height: 425px; /* Should be removed. Only for demonstration */
-				border-radius: 10px;
-			  background-size: 100% 100%;
-			  background-repeat: no-repeat;
+			  width: 50%;
+			  padding: 0px 20px 10px 20px;
+				height: 425px;
+			}
 
+			/* Remove extra left and right margins, due to padding */
+			.row {margin: 0 -5px;}
 
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Responsive columns */
+			@media screen and (max-width: 800px) {
+			  .column {
+			    width: 100%;
+			    display: block;
+			    margin-bottom: 100px;
+					padding: 0px 50px 50px 50px;
 			  }
+			}
 
-				/* Clear floats after the columns */
-				.row:after {
-				  content: "";
-				  display: table;
-				  clear: both;
-				}
 
 				.column1 {
 				  float: left;
@@ -577,7 +771,6 @@ scroll-behavior: smooth;
 				  height: auto; /* Should be removed. Only for demonstration */
 				  background-size: 95% 95%;
 				  background-repeat: no-repeat;
-
 				  }
 
 					.column3 {
@@ -586,8 +779,14 @@ scroll-behavior: smooth;
 						width: 33.3%;
 					  height: auto; /* Should be removed. Only for demonstration */
 						border-radius: 10px;
-
 					  }
+
+						@media screen and (max-width: 600px) {
+						  .column3 {
+								width: 50%;
+						  }
+						}
+
 
 						/* Clear floats after the columns */
 						.row:after {
@@ -596,14 +795,15 @@ scroll-behavior: smooth;
 						  clear: both;
 						}
 
-
-
 					/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 					@media screen and (max-width: 600px) {
 					  .column {
 					    width: 100%;
 					  }
 					}
+
+
+
 
 
 			.left {

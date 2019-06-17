@@ -106,7 +106,7 @@ scroll-behavior: smooth;
 			}
 			@media screen and (max-width: 600px) {
 				button{
-					font-size: 20px;
+					font-size: 35px;
 				}
 			}
 
@@ -1080,7 +1080,14 @@ scroll-behavior: smooth;
 			   width: 100%;
 			   background-color: #F4F4F4;
 			   color: white;
-
+			}
+			.footer1 {
+				 left: 0;
+				 bottom: 0;
+				 padding: 50px;
+				 width: 100%;
+				 background-color: #F4F4F4;
+				 color: white;
 			}
 
 			.footer a {
@@ -1089,9 +1096,21 @@ scroll-behavior: smooth;
 			  padding: 5px; 5px;
 			}
 
-			footer a:hover {
+			.footer a:hover {
 			  color: #000;
-			  text-decoration: line-under;
+			  text-decoration: none;
+			}
+
+			@media only screen and (min-width: 600px) {
+			  .footer1 {
+					display:none;
+			  }
+			}
+
+			@media only screen and (max-width: 600px) {
+			  .footer {
+					display:none;
+			  }
 			}
 
 

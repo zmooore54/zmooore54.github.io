@@ -459,12 +459,22 @@ scroll-behavior: smooth;
 
 		 	text-align: center;
 		 	color: #067BC2;
-		 	font-size: 14px;
+		 	font-size: 12px;
 		 	font-family: "Poppins", sans-serif;
 		 	font-style: italic;
-		 	font-weight:bold;
 		 }/*quotes*/
 
+		 .quote {
+			 margin-left:100px;
+			 margin-right:100px;
+		 }
+
+		 @media screen and (max-width: 600px) {
+			 .quote {
+				 margin-left:50px;
+				 margin-right:50px;
+			 }
+		 }
 
 		 ul {
 		  text-transform: none;

@@ -662,23 +662,22 @@ scroll-behavior: smooth;
 
 			.grid-container {
 			  display: grid;
-			  grid-column-gap: 50px;
+			  grid-column-gap: 20px;
 			  grid-template-columns: 50% 50%;
-				grid-template-rows: 425px;
-			  padding: 10px;
+			  padding-right: 2%;
 			}
 
 			@media only screen and (max-width: 600px) {
 				.grid-container{
 					grid-template-rows: 350px;
 					grid-row-gap: 10px;
+					padding-right: 0px;
 				}
 			}
 
 
 			.grid-item {
 				background-size: 100% 100%;
-			  padding: 5px 0px 0px 0px;
 				border-radius: 10px;
 			}
 			@media only screen and (max-width: 600px) {

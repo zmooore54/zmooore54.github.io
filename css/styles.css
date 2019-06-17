@@ -416,6 +416,12 @@ scroll-behavior: smooth;
 		  font-weight: 100;
 		 }
 
+		 @media screen and (max-width: 600px) {
+ 		  p13 {
+ 		    font-size: 12px;
+ 		  }
+ 		}
+
 		 p14 {
 		 text-transform: none;
 		  text-align: right;

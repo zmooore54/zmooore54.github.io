@@ -9,6 +9,11 @@ scroll-behavior: smooth;
 }
 		/* Center website */
 
+			.main3 {
+				max-width: 1500px;
+				margin: auto;
+			}
+
 			.main {
 			  max-width: 1100px;
 			  margin: auto;
@@ -193,7 +198,8 @@ scroll-behavior: smooth;
 		  text-align: center;
 		  line-height: 1.6;
 		  font-family: 'Poppins', sans-serif;
-		  font-size: 50px;
+		  font-size: 30px;
+			font-weight: 1000;
 		  color: #000000;
 		 }
 
@@ -256,7 +262,7 @@ scroll-behavior: smooth;
 			  text-align: center;
 			  font-family: 'Poppins', sans-serif;
 			  font-weight: 100;
-			  font-size: 28px;
+			  font-size: 20px;
 			  color: #313131;
 
 			}
@@ -280,7 +286,7 @@ scroll-behavior: smooth;
 				text-align: left;
 			  color: #000000;
 			  font-family: 'Poppins', sans-serif;
-			  font-size: 18px;
+			  font-size: 15px;
 			  letter-spacing: 1px;
 			  font-weight: 400;
 			}
@@ -289,7 +295,7 @@ scroll-behavior: smooth;
 			  text-align: left;
 			  color: #999999;
 			  font-family: 'Poppins', sans-serif;
-			  font-size: 15px;
+			  font-size: 13px;
 			  }
 
 		 p4 {
@@ -693,7 +699,7 @@ scroll-behavior: smooth;
 			}
 		.header {
 	  overflow: hidden;
-	  padding: 30px 30px 0px;
+	  padding: 30px 0px 0px;
 		}
 
 		.header a {
@@ -708,9 +714,10 @@ scroll-behavior: smooth;
 		}
 
 		.header a.logo {
-		  font-size: 35px;
+		  font-size: 20px;
 		  font-weight: bold;
 			color: #f5895e;
+			float: left;
 		}
 
 		.header a:hover {
@@ -763,8 +770,9 @@ scroll-behavior: smooth;
 			.grid-container {
 			  display: grid;
 			  grid-column-gap: 30px;
-			  grid-template-columns: 50% 50%;
-			  padding-right: 2%;
+				grid-template-rows: 250px;
+			  grid-template-columns: 33.33% 33.33% 33.33%;
+			  padding-right: 5%;
 			}
 
 			@media only screen and (max-width: 600px) {
@@ -800,7 +808,7 @@ scroll-behavior: smooth;
 			  display: grid;
 			  grid-column-gap: 50px;
 			  grid-template-columns: 50% 50%;
-				grid-template-rows: 425px;
+				grid-template-rows: 450px;
 			  padding: 10px;
 			}
 
@@ -922,7 +930,7 @@ scroll-behavior: smooth;
 		 }
 
 			img.rounded-corners{
-				border-radius: 5px;
+				border-radius: 0px;
 			}
 
 
@@ -958,10 +966,9 @@ scroll-behavior: smooth;
 
 				.column1 {
 				  float: left;
-				  padding: 2px;
 					width: 50%;
 				  height: auto; /* Should be removed. Only for demonstration */
-				  background-size: 95% 95%;
+				  background-size: 100% 100%;
 				  background-repeat: no-repeat;
 				  }
 

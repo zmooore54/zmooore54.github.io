@@ -193,8 +193,11 @@ and (max-device-width : 1024px)  {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 1em;
-
+  width: auto;
+  height: auto;
+  overflow: auto;
 }
+
 
 /*text in 3 columns*/
 /* Create three equal columns that floats next to each other */
@@ -346,6 +349,8 @@ and (max-device-width : 1024px)  {
 .location-image {
   line-height: 0;
   overflow: auto;
+  height: auto;
+  width: auto;
 }
 
 .location-image img {

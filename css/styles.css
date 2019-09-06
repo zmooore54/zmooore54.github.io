@@ -30,6 +30,11 @@ background-color: #dfdfdf;
 
 }
 
+.yellow{
+background-color: #F6D178;
+
+}
+
 
 .main {
   max-width: 1000px;
@@ -303,6 +308,26 @@ padding-bottom: 50px;
 
 @media screen and (max-width: 600px) {
   .column4 {
+    width: 100%;
+  }
+}
+
+.column5 {
+  float: left;
+  width: 33.3%;
+  height: auto; /* Should be removed. Only for demonstration */
+  padding-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column5 {
     width: 100%;
   }
 }

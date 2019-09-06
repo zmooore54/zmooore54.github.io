@@ -8,7 +8,7 @@ box-sizing: border-box;
 }
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: [ auto | smooth ];
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -25,10 +25,17 @@ body{
   overflow-x: hidden;
 }
 
+.grey{
+background-color: #dfdfdf;
+
+}
+
+
 .main {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 0px;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,7 +55,33 @@ and (max-device-width : 1024px)  {
     margin-right:auto;
   }
 }
+.main1 {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
 
+@media only screen and (max-width: 600px) {
+  .main1 {
+    max-width: 600px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .main1 {
+    max-width: 728px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+.space{
+padding-bottom: 50px;
+}
 /*backgrounds*/
 .halfback {
   background: linear-gradient(to right, #ffffff 50%, #f5f5f5 50%);
@@ -164,7 +197,19 @@ and (max-device-width : 1024px)  {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 0 20px 10px;
+  padding: 0 0 20px 0px;
+}
+
+.vcenter {
+  display: table-cell;
+  height: 400px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .vcenter {
+    height: 200px;
+  }
 }
 
 /* Create two equal columns that sits next to each other */
@@ -191,18 +236,19 @@ and (max-device-width : 1024px)  {
 /*project grid*/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 1em;
   overflow: auto;
 }
 
 
 /*text in 3 columns*/
-/* Create three equal columns that floats next to each other */
+/* Create four equal columns that floats next to each other */
 .column2 {
   float: left;
-  width: 33.33%;
-  padding: 20px;
+  width: 25%;
+  padding: 0px;
+
 }
 
 /* Clear floats after the columns */
@@ -223,7 +269,7 @@ and (max-device-width : 1024px)  {
 .column3 {
   float: left;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* Clear floats after the columns */
@@ -240,10 +286,31 @@ and (max-device-width : 1024px)  {
   }
 }
 
+/* Create two equal columns that sits next to each other */
+.column4 {
+  float: left;
+  width: 50%;
+  height: auto; /* Should be removed. Only for demonstration */
+  padding-right: 60px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column4 {
+    width: 100%;
+  }
+}
+
 /*hero images*/
 .hero-image {
   background-color: #ffffff;
-  padding-top: 5%;
+
   padding-bottom: 5%;
   height: auto;
   background-size: cover;
@@ -319,7 +386,8 @@ and (max-device-width : 1024px)  {
 /*button for download*/
 .vmbutton {
   background-color: white;
-  border: 2px solid #555555;
+  border: 1px solid #555555;
+  font-family: "Poppins", sans-serif;
   color: black;
   padding: 20px;
   text-align: center;
@@ -328,15 +396,16 @@ and (max-device-width : 1024px)  {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
+
   width: 50%;
 }
 
 
 .vmbutton5:hover {
 
-  background-color: #f5895e;
+  background-color: #CDCDCD;
   color: white;
+  border: none;
 }
 
 /* hover styles */
@@ -360,7 +429,7 @@ and (max-device-width : 1024px)  {
 .location-title {
   font-size: 30px;
   font-family:'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
   z-index: 1;
   position: absolute;
@@ -513,10 +582,10 @@ ul {
  text-align: none;
  color: #2b2b2b;
  font-size: 16px;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Poppins', sans-serif;
  font-weight: 300;
  line-height: 1;
-   letter-spacing: .01em;
+letter-spacing: .01em;
 }
 
 ol {
@@ -526,10 +595,10 @@ ol {
  margin-left: 5%;
  color: #2b2b2b;
  font-size: 16px;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Poppins', sans-serif;
  font-weight: 300;
  line-height: 1.8;
-   letter-spacing: .01em;
+ letter-spacing: .01em;
 }
 
 li {
@@ -539,7 +608,7 @@ li {
  margin-left: 5%;
  color: #2b2b2b;
  font-size: 16px;
- font-family: 'Roboto', sans-serif;
+ font-family: 'Poppins', sans-serif;
  font-weight: 300;
  line-height: 1.8;
    letter-spacing: .01em;
@@ -565,7 +634,7 @@ text-align: left;
 line-height: 1.6;
 font-family: 'Poppins', sans-serif;
 font-size: 45px;
-font-weight: 1000;
+font-weight: 400;
 color: #000000;
 }
 
@@ -573,7 +642,7 @@ color: #000000;
 p1 {
    text-align: center;
    font-family: 'Poppins', sans-serif;
-   font-weight: 100;
+   font-weight: 400;
    font-size: 18px;
    color: #313131;
  }
@@ -593,9 +662,9 @@ p1 {
   text-align: left;
   text-transform: uppercase;
   color: rgba(74,74,74,.84);
-  font-size: 17px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   letter-spacing: .10em;
  }
 
@@ -631,13 +700,13 @@ p1 {
   text-transform: none;
   color: #000000;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   letter-spacing: .01em;
  }
  p8 {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #313131;
@@ -657,8 +726,8 @@ p1 {
      text-transform: none;
      color: #000000;
      font-size: 15px;
-     font-family: 'Roboto', sans-serif;
-     font-weight: 300;
+     font-family: 'Poppins', sans-serif;
+     font-weight: thin;
      letter-spacing: .01em;
     }
 
@@ -667,8 +736,39 @@ p1 {
      text-transform: none;
      color: #000000;
      font-size: 18px;
-     font-family: 'Roboto', sans-serif;
+     font-family: '', sans-serif;
      font-weight: 400;
      font-style: italic;
      letter-spacing: .01em;
+    }
+
+    p12 {
+     text-align: left;
+     text-transform: none;
+     color: #000000;
+     font-size: 24px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-style: italic;
+     letter-spacing: .01em;
+    }
+
+    p13 {
+     text-align: left;
+     text-transform: none;
+     color: #000000;
+     font-size: 20px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 300;
+     letter-spacing: .01em;
+    }
+
+    p14 {
+     text-align: center;
+     text-transform: none;
+     color: #2b2b2b;
+     font-size: 40px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     letter-spacing: .10em;
     }

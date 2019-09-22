@@ -95,6 +95,7 @@ padding-bottom: 50px;
 @media only screen and (max-width: 600px) {
   .halfback {
     background:none;
+    overflow-x: hidden; 
   }
 }
 
